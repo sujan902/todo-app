@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Basic To-Do App</title>
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+			max-width: 500px;
+			margin: auto;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			gap: 10px;
+		}
+
+		input[type="text"] {
+			flex: 1;
+			padding: 10px;
+			font-size: 16px;
+		}
+
+		button {
+			padding: 10px 15px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+ul {
+			list-style-type: none;
+			padding: 0;
+			margin-top: 20px;
+		}
+
+		li {
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		li.completed span {
+			text-decoration: line-through;
+			color: gray;
+		}
+
+		.actions button {
+			margin-left: 5px;
+			border: none;
+			background: transparent;
+			cursor: pointer;
+		}
+
+		.check-btn {
+			color:  pink;
+		}
+
+		.delete-btn {
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>To-Do App</h2>
+	<form id="todo-form">
+		<input type="text" id="taskInput" placeholder="Enter a task" required />
+		<button type="submit">Add</button>
+	</form>
+	<ul id="taskList"></ul>
+</body>
+
+</html>
